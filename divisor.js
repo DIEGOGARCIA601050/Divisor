@@ -1,14 +1,14 @@
-for (let i = 15; i <= 5915; i++) {
-  const resultado = 82810/i;
-  if (Number.isInteger(resultado)) {
-    // console.log(`Número, ${i},`);
-    // console.log(`ResultadoDeLaDivisiónEntre82810, ${resultado},`);
-    // console.log(`El Número: ${i}``Da como resultado de la división entre 82810 al número: ${resultado}`)
-    // console.log("-");
-    // console.log(`${i},`);
-    // console.log(`${resultado},`);
-  }
-}
+// for (let i = 15; i <= 5915; i++) {
+//   const resultado = 82810/i;
+//   if (Number.isInteger(resultado)) {
+//     // console.log(`Número, ${i},`);
+//     // console.log(`ResultadoDeLaDivisiónEntre82810, ${resultado},`);
+//     // console.log(`El Número: ${i}``Da como resultado de la división entre 82810 al número: ${resultado}`)
+//     // console.log("-");
+//     // console.log(`${i},`);
+//     // console.log(`${resultado},`);
+//   }
+// }
 
 //Ciclo for para resolver la cuártica
 let divisores = [
