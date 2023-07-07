@@ -9,22 +9,99 @@
       body {
         background-color: aliceblue;
         padding: 20px;
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"PingFang SC","Hiragino Sans GB",STHeiti,"Microsoft YaHei","Microsoft JhengHei","Source Han Sans SC","Noto Sans CJK SC","Source Han Sans CN","Noto Sans SC","Source Han Sans TC","Noto Sans CJK TC","WenQuanYi Micro Hei",SimSun,sans-serif;
       }
       h1 {
         color: #006691;
       }
+
+      .navbar-right {
+  float: right !important;
+  margin-right: -15px;
+}
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+    margin-right: 0px;
+}
+
+.navbar-nav {
+  margin: 7.5px -15px;
+}
+
+ul {
+  margin-top: 0;
+ margin-bottom: 0px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+
+li {
+  display: inline;
+  border-right-width: 30px;
+  border-style: solid;
+  border-color: aliceblue;
+}
+
+a {
+  color: #fff;
+  background-color: #130547; 
+  text-decoration: none;
+  padding: 5px;
+}
+
+li ::selection {
+  color: #fff;
+  text-shadow: none;
+  background: #0085a1;
+}
+
+.nover {
+  visibility: hidden;
+  display: none;
+}
+
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
       h2 {
         color: #2499c7;
-      }
-      .uno {
-        color: #30a5d3;
       }
     </style>
     <!-- <script src="./divisor.js"></script> -->
   </head>
   <body>
-    <h1>Hola desde México</h1>
+    <header>
+      <h1>Hola desde México</h1>
+      <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+    
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar" class=" ">
+                <div class="navbar-collapse" style="height: 0px;">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>                        
+                        <li>
+                            <a href="./divisor.js">js</a>
+                        </li>
+                        <li class="nover">ab</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    </header>
     <h2 class="uno">diferencia?</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit numquam
