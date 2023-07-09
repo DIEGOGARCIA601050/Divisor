@@ -120,3 +120,13 @@ console.log(81*treintaicinco**4)
   let BotonOcultar = document.getElementById('OcultarListaUno')
   BotonOcultar.addEventListener('click', OcultarListaUno)
   
+  //Recursividad
+  function suma(number) {
+    if (number===0||number===1) {
+      return 1
+    } else {
+      return number+suma(number-1)
+    }
+  }
+
+  suma(4)
