@@ -130,3 +130,16 @@ console.log(81*treintaicinco**4)
   }
 
   suma(4)
+
+  //Fibonacci
+  function Fibonacci(number) {
+    if (number===-1/*||number===1||number===2*/) {
+      return 1
+    } else {
+      let n = number+Fibonacci(number-1)
+      console.log(n)
+      return n
+    }
+  }
+
+  Fibonacci(6)
