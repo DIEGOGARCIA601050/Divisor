@@ -20,55 +20,60 @@
   margin-right: -15px;
 }
 
-.navbar-nav {
-  float: left;
-  margin: 0;
-    margin-right: 0px;
-}
+      .navbar-nav {
+        float: left;
+        margin: 0;
+          margin-right: 0px;
+      }
 
-.navbar-nav {
-  margin: 7.5px -15px;
-}
+      .navbar-nav {
+        margin: 7.5px -15px;
+      }
 
-ul {
-  margin-top: 0;
- margin-bottom: 0px;
-  position: absolute;
-  right: 0;
-  top: 0;
-  
-}
+      ul {
+        margin-top: 0;
+      margin-bottom: 0px;  
+      }
 
-li {
-  display: inline;
-  border-right-width: 30px;
-  border-style: solid;
-  border-color: aliceblue;
-}
+      .ListaXD{
+        list-style: none;
+        padding-bottom: 10px;
+      }
 
-a {
-  color: #fff;
-  background-color: #130547; 
-  text-decoration: none;
-  padding: 5px;
-}
+      li {
+        display: inline;
+        border-right-width: 30px;
+        border-style: solid;
+        border-color: aliceblue;
+      }
 
-li ::selection {
-  color: #fff;
-  text-shadow: none;
-  background: #0085a1;
-}
+      a {
+        color: #fff;
+        background-color: #130547; 
+        text-decoration: none;
+        padding: 5px;
+      }
 
-.nover {
-  visibility: hidden;
-  display: none;
-}
+      li ::selection {
+        color: #fff;
+        text-shadow: none;
+        background: #0085a1;
+      }
 
-.nav {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
+      .nover {
+        visibility: hidden;
+        display: none;
+      }
+
+      .nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        padding-top: 10px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
 
       h2 {
         color: #2499c7;
@@ -108,7 +113,7 @@ li ::selection {
     </p>
     <h2 class="2">2</h2>
     <div id="ListaXD">
-      <ul>
+      <ul class="ListaXD">
         <li>Huevos</li>
         <li>Caiste</li>
         <li>Xd</li>
@@ -117,7 +122,6 @@ li ::selection {
     <button id="MostrarListaUno" style="display: block">
       Ver Lista importante
     </button>
-    <button id="OcultarListaUno" style="display: block">Ocultar Lista </button>
     <u
       >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, minima!
       Quaerat ipsam, dolore officia blanditiis vero veritatis, temporibus
@@ -135,6 +139,7 @@ li ::selection {
       Ver Lista De Paises
     </button>
     <button id="OcultarLista">Ocultar Lista de paises</button>
+    <button style="display: block;" id="likebtn">Me gusta</button>
     <script src="./divisor.js"></script>
   </body>
 </html>
