@@ -4,18 +4,19 @@
   ListaDePaises.style.display = "none"
 
   let ButtonMostrar = document.getElementById('MostrarLista')
-  ButtonMostrar.addEventListener('click', MostarLista)
+  ButtonMostrar.addEventListener('click', MostrarOcultar)
 
-  function MostarLista() {
-    ListaDePaises.style.display = 'block'
+  function MostrarOcultar() {
+    if (ButtonMostrar.classList.contains('mostrar')) {
+      ButtonMostrar.classList.remove('mostrar')
+      ButtonMostrar.innerHTML='Ocultar Lista de paises'
+      ButtonMostrar.addEventListener('click',()=>{ListaDePaises.style.display = 'none'})
+    } else {
+      ButtonMostrar.classList.add('mostrar')
+      ButtonMostrar.innerHTML='Ver Lista De Paises'
+      ButtonMostrar.addEventListener('click',()=>{ListaDePaises.style.display = 'block'})
+    }
   }
-
-  function OcultarLista() {
-    ListaDePaises.style.display = 'none'
-  }
-
-  let ButtonOcultar = document.getElementById('OcultarLista')
-  ButtonOcultar.addEventListener('click', OcultarLista)
 
 //Aquí es para la primera lista
   let Listaxd = document.getElementById("ListaXD")
@@ -30,9 +31,10 @@
     BotonMostrar.addEventListener('click',()=>{Listaxd.style.display = 'none'})
   } else {
     BotonMostrar.classList.add('mostrar')
-    BotonMostrar.innerHTML='Mostrar lista XD'
+    BotonMostrar.innerHTML='Ver Lista importante'
     BotonMostrar.addEventListener('click',()=>{Listaxd.style.display = 'block'})
   }}
+
 
   //Recursividad
   function suma(number) {
@@ -57,15 +59,3 @@
   }
 
   Fibonacci(6)
-
-//boton de likes
-  const likesbtn = document.getElementById('likebtn')
-  likesbtn.addEventListener('click',function(){
-    if(likesbtn.classList.contains('liked')){
-      likesbtn.classList.remove('liked')
-      likesbtn.innerHTML='Quitar me gusta'
-    } else{
-      likesbtn.classList.add('liked')
-      likesbtn.innerHTML='Me gusta'
-    }
-  })
